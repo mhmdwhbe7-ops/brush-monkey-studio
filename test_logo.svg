@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' width='1000' height='1000'>
+  <defs>
+    <!-- Crisp vector representation of Brush Monkey B Logo -->
+  </defs>
+  <!-- Background is transparent -->
+  <g fill='#171717'>
+    <!-- Main B lettermark with negative spaces -->
+    <path fill-rule='evenodd' d='
+      M 268 820
+      C 305 775, 328 710, 328 650
+      L 328 290
+      C 328 250, 308 234, 298 228
+      C 360 220, 480 205, 576 177
+      C 560 208, 566 244, 620 298
+      C 630 330, 630 360, 615 390
+      C 635 395, 654 415, 654 445
+      C 654 472, 632 490, 580 495
+      C 660 505, 755 565, 755 675
+      C 755 770, 660 820, 500 820
+      C 420 820, 340 820, 268 820
+      Z
+      M 372 300
+      C 410 300, 440 330, 440 365
+      C 440 380, 435 395, 425 408
+      C 455 395, 470 365, 470 340
+      C 470 300, 425 275, 372 300
+      Z
+    ' />
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Brush Monkey Studio",
+  "description": "Playful graphic design studio crafting bold brand identities, character illustrations, and packaging with personality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

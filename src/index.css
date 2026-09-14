@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', 'Space Grotesk', sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-tangerine: #EE9007;
+    --color-cream: #EDE1D1;
+    --color-forest: #111409;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #EDE1D1;
+    color: #111409;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Graphic Shadows in Deep Forest (#111409) & Tangerine (#EE9007) */
+.shadow-brutal-sm {
+  box-shadow: 2px 2px 0px #111409;
+}
+
+.shadow-brutal {
+  box-shadow: 4px 4px 0px #111409;
+}
+
+.shadow-brutal-lg {
+  box-shadow: 6px 6px 0px #111409;
+}
+
+.shadow-brutal-xl {
+  box-shadow: 8px 8px 0px #111409;
+}
+
+.shadow-brutal-tangerine {
+  box-shadow: 4px 4px 0px #EE9007;
+}
+
+.shadow-brutal-tangerine-sm {
+  box-shadow: 2px 2px 0px #EE9007;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(8deg) scale(1.06); }
+}
+
+.animate-wiggle {
+  animation: wiggle 3s infinite ease-in-out;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Arabic Text Typography, RTL Direction & Alignment */
+html[data-lang="ar"] [data-ar],
+body[data-current-lang="AR"] [data-ar],
+[data-current-lang="AR"] [data-ar] {
+  font-family: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: isolate;
+}
+
+/* Centered elements, buttons, and badges retain centered alignment */
+html[data-lang="ar"] .text-center[data-ar],
+html[data-lang="ar"] [data-ar].text-center,
+[data-current-lang="AR"] .text-center[data-ar],
+[data-current-lang="AR"] [data-ar].text-center,
+html[data-lang="ar"] button[data-ar],
+[data-current-lang="AR"] button[data-ar],
+html[data-lang="ar"] a[data-ar].text-center,
+[data-current-lang="AR"] a[data-ar].text-center {
+  text-align: center !important;
+}
+
+/* The language toggle button itself stays LTR centered */
+#nav-lang-toggle,
+[data-lang-toggle] {
+  direction: ltr !important;
+  text-align: center !important;
+  font-family: var(--font-body) !important;
+}
+

@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/brush-monkey-studio/',
+    base: '/brush/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
